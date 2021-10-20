@@ -60,7 +60,7 @@ M -> .menu__title-blue
 }
 
 .menu__nav-items {
-  gap: 40px;
+  gap: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +79,7 @@ M -> .menu__title-blue
 
 .herosection__dimension {
   background: url("./images/undraw_react_y7wq.svg");
-  background-size: 50%;
+  background-size: 60%;
   background-position: center right;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -100,25 +100,11 @@ M -> .menu__title-blue
   font-size: 24px;
 }
 
-.herosection__mouse {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.herosection__dimension-mouse {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 30px;
+  width: 100% !important;
+  height: 100% !important;
 }
-
-.herosection__mouse img {
-  width: 30px;
-  height: 30px;
-  padding-bottom: 30px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
