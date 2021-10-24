@@ -109,7 +109,7 @@ M -> .menu__title-blue
 .aboutme{
   width: 100%;
   height: 60vh;
-  background-color: #202024d2;
+  background-color: $color-light-gray;
   
   &__dimension {
     padding: 40px 0;
@@ -129,12 +129,12 @@ M -> .menu__title-blue
     }
 
     h3{
-      font-size: 23px;
-      padding-bottom: 15px;
+      @include font-size-h3
     }
     p {
       font-size: 14px;
       padding-bottom: 20px ;
+      line-height: 1.5em;
     }
    .button__wrapper{
      margin-top: 20px;
@@ -199,6 +199,100 @@ M -> .menu__title-blue
     
     button{
       @include button-secondary;
+    }
+  }
+}
+
+.habilidades {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 80vh;
+  padding-top:70px;
+  background-color: $color-light-gray;
+  color:$color-white;
+
+  &__dimension {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10%;
+    max-width: 800px;
+    
+    &-container {
+      
+      width: 100%;
+      margin-left: -250px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      h3 {
+          @include font-size-h3
+      }
+      p{
+        width: 400px;
+        line-height: 1.5em;
+      }
+    }
+    &-icons{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+
+
+      div{
+        background-color: $color-grey ;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        width: 85px;
+        height: 85px;
+        margin: 15px;
+        border-radius: 10px;
+        
+        i {
+          font-size: 50px;
+          color:#8257E5; 
+          
+          
+        }
+
+        &:hover {
+         i {
+          color: #2222FF;
+          font-size: 40px;
+         } 
+          border-bottom: 5px solid #2222FF;   
+         }
+        
+
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(70deg, (#2222FF), (#8257E5));;
+
+
+  &__dimension {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+      margin: 0 40px;
+      font-size: 30px;
+      color: $color-white;
+    }
+    a {
+      margin-top: 40px;
     }
   }
 }

@@ -4,7 +4,9 @@ $color-black:#000000;
 
 $color-white:#ffffff;
 
-@mixin font-size-h2{
+$color-light-gray:#202024d2;
+
+@mixin font-size-h2 {
 
   font-size: 32px;
   font-family: 'Roboto', sans-serif;
@@ -41,4 +43,13 @@ $color-white:#ffffff;
   &:hover{
     filter: brightness(80%);
   }
+}
+
+@mixin font-size-h3 {
+
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 40px;
+  font-weight: bold;
+  padding-bottom: 20px ;
 }
