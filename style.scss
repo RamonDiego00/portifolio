@@ -242,6 +242,7 @@ M -> .menu__title-blue
       align-items: flex-end;
       justify-content: flex-end;
       flex-wrap: wrap;
+      cursor: pointer;
 
 
       div{
@@ -295,6 +296,8 @@ M -> .menu__title-blue
       margin-top: 40px;
     }
   }
+
+
 }
 
 .desativado{
@@ -304,6 +307,40 @@ M -> .menu__title-blue
   display: block;
 }
 
-.habilidades__dimension-container:first-child { 
-  display: block;
- }
+   .cssStyle{
+    background: linear-gradient(70deg, (#47474B), ( #264DE4));;
+   }
+   .htmlStyle{
+    background: linear-gradient(70deg, (#47474B), ( #E44D26));;
+   }
+   .jsStyle{
+    background: linear-gradient(70deg, (#47474B), ( #EFC725));;
+   }
+
+   .bootStyle{
+    background: linear-gradient(70deg, (#47474B), ( #800AF9));;
+   }
+
+   .sassStyle{
+    background: linear-gradient(70deg, (#47474B), ( #CD669A));;
+   }
+
+   .reactStyle{
+    background: linear-gradient(70deg, (#47474B), ( #00D8FF));;
+   }
+
+   .nodeStyle{
+    background: linear-gradient(70deg, (#47474B), ( #54A245));;
+   }
+
+   .javaStyle{
+    background: linear-gradient(70deg, (#47474B), ( #EA2E2F));;
+   }
+
+   .grayStyle {
+     background-color: #47474B;
+   }
+
+
+
+   

@@ -1,18 +1,22 @@
 function toggle(altera) {
 
-    let skills = document.querySelector(`.${altera}`);
-    skills.classList.toggle("desativado");
+    
+        let skills = document.querySelector(`.${altera}`);
+        skills.classList.toggle("desativado");
+        // skills.classList.remove("desativado");
+        
+    }
+function backColors(altera) {
+    let container = document.querySelector(`.habilidades`);
+    container.classList.toggle(`${altera}Style`)
+}
 
-    // let icones = document.querySelectorAll('div')
-    // for (var i = 0; i<icones.length; i++){
-    //     icones[i].addEventListener('click', removerFilho);
-    // }
+function backGray(altera) {
+    let container = document.querySelector(`.habilidades`);
 
-    // function removerFilho(e) {
-    //     e.preventDefault();
-    //     let textos =  skills.classList.toggle("desativado");
-    //     let div = this.parentNode;
-    //     div.parentNode.removeChild(textos)
-    // }
+    container.addEventListener("mouseup", function(e) {
+        setTimeout(function() {
+            container.classList.remove(`${altera}Style`)
+        }, 3000)});
 
 }
