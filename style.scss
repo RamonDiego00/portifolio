@@ -296,3 +296,14 @@ M -> .menu__title-blue
     }
   }
 }
+
+.desativado{
+  display: none;
+}
+.ativado{
+  display: block;
+}
+
+.habilidades__dimension-container:first-child { 
+  display: block;
+ }

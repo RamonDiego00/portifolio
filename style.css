@@ -430,4 +430,16 @@ M -> .menu__title-blue
 .footer__dimension a {
   margin-top: 40px;
 }
+
+.desativado {
+  display: none;
+}
+
+.ativado {
+  display: block;
+}
+
+.habilidades__dimension-container:first-child {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
