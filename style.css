@@ -40,6 +40,7 @@ M -> .menu__title-blue
   width: 100%;
   padding: 0 20px;
   height: 80px;
+  position: fixed;
 }
 
 .menu__nav {
@@ -95,8 +96,8 @@ M -> .menu__title-blue
 
 .herosection__dimension {
   background: url("./images/undraw_react_y7wq.svg");
-  background-size: 50%;
-  background-position: center right;
+  background-size: 45%;
+  background-position: right 80px;
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
