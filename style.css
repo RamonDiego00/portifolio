@@ -22,6 +22,15 @@ ol, ul {
   list-style: none;
 }
 
+html {
+  --bg1: #202024;
+  --bg2: #202024d2;
+  --color-text: #ffff;
+  --color-header:#000000;
+  --color-blocks:#47474B;
+  --filter-svg:invert(100%);
+}
+
 /* Ramon CSS */
 /* 
 BEM - Bloco - Elemento - Modificador
@@ -32,8 +41,8 @@ M -> .menu__title-blue
 
 */
 .menu {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--color-header);
+  color: var(--color-text);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,6 +67,10 @@ M -> .menu__title-blue
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.menu__nav i {
+  z-index: 2;
 }
 
 .menu__nav button {
@@ -90,8 +103,8 @@ M -> .menu__title-blue
 }
 
 .herosection {
-  background-color: #202024;
-  color: #ffffff;
+  background-color: var(--bg1);
+  color: var(--color-text);
 }
 
 .herosection__dimension {
@@ -138,14 +151,14 @@ M -> .menu__title-blue
   width: 30px;
   height: 30px;
   padding-bottom: 30px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  -webkit-filter: var(--filter-svg);
+          filter: var(--filter-svg);
 }
 
 .aboutme {
   width: 100%;
   height: 60vh;
-  background-color: #202024d2;
+  background-color: var(--bg2);
 }
 
 .aboutme__dimension {
@@ -159,7 +172,7 @@ M -> .menu__title-blue
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #ffffff;
+  color: var(--color-text);
   gap: 24px;
 }
 
@@ -213,8 +226,8 @@ M -> .menu__title-blue
   width: 100%;
   height: 80vh;
   padding-top: 70px;
-  background-color: #202024;
-  color: #ffffff;
+  background-color: var(--bg1);
+  color: var(--color-text);
 }
 
 .projects h2 {
@@ -263,7 +276,7 @@ M -> .menu__title-blue
           flex-direction: column;
   width: 200px;
   height: 150px;
-  background-color: #47474B;
+  background-color: var(--color-blocks);
   border-radius: 4px;
 }
 
@@ -304,8 +317,8 @@ M -> .menu__title-blue
   width: 100%;
   height: 80vh;
   padding-top: 70px;
-  background-color: #202024d2;
-  color: #ffffff;
+  background-color: var(--bg2);
+  color: var(--color-text);
 }
 
 .habilidades__dimension {
@@ -371,7 +384,7 @@ M -> .menu__title-blue
 }
 
 .habilidades__dimension-icons div {
-  background-color: #202024;
+  background-color: var(--bg1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,39 +454,83 @@ M -> .menu__title-blue
   display: block;
 }
 
-.cssStyle {
-  background: linear-gradient(70deg, #47474B, #264DE4);
+.htmlStyle {
+  background: linear-gradient(70deg, var(--color-blocks), #E44D26);
 }
 
-.htmlStyle {
-  background: linear-gradient(70deg, #47474B, #E44D26);
+.cssStyle {
+  background: linear-gradient(70deg, var(--color-blocks), #264DE4);
 }
 
 .jsStyle {
-  background: linear-gradient(70deg, #47474B, #EFC725);
+  background: linear-gradient(70deg, var(--color-blocks), #EFC725);
 }
 
 .bootStyle {
-  background: linear-gradient(70deg, #47474B, #800AF9);
+  background: linear-gradient(70deg, var(--color-blocks), #800AF9);
 }
 
 .sassStyle {
-  background: linear-gradient(70deg, #47474B, #CD669A);
+  background: linear-gradient(70deg, var(--color-blocks), #CD669A);
 }
 
 .reactStyle {
-  background: linear-gradient(70deg, #47474B, #00D8FF);
+  background: linear-gradient(70deg, var(--color-blocks), #00D8FF);
 }
 
 .nodeStyle {
-  background: linear-gradient(70deg, #47474B, #54A245);
+  background: linear-gradient(70deg, var(--color-blocks), #54A245);
 }
 
 .javaStyle {
-  background: linear-gradient(70deg, #47474B, #EA2E2F);
+  background: linear-gradient(70deg, var(--color-blocks), #EA2E2F);
 }
 
 .grayStyle {
-  background-color: #47474B;
+  background-color: var(--color-blocks);
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: #8f8f8f;
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+label::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-header);
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background-color: var(--color-blocks);
+}
+
+input:checked + label::after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 45px;
 }
 /*# sourceMappingURL=style.css.map */
