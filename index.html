@@ -18,15 +18,14 @@
 <body>
     <menu class="menu">
         <nav class="menu__nav">
-            <h1>Ramon</h1>
+            <h2><a href="index.html"><img src="./images/minhaLogo2-removebg-preview.png" id="logo" alt="" srcset="" class="logo"></a></h2>
             <ul class="menu__nav-items">
-                <li>Sobre mim</li>
-                <li>Projetos</li>
-                <li>Serviços</li>
-                <li>Habilidades</li>
+                <li> <a href="index.html#sobre_mim">Sobre mim</a></li>
+                <li> <a href="index.html#projetos"> Projetos</a></li>
+                <li> <a href="index.html#skills">Habilidades</a></li>
             </ul>
             <div class="toggle">
-                <input id="switch" type="checkbox" name="theme">
+                <input id="switch" type="checkbox" name="theme" onchange="trocarImagem()">
                 <label for="switch"><i class="fas fa-sun"></i></label> 
             </div>
         </nav>
@@ -35,21 +34,21 @@
         <div class="herosection__dimension">
             <div>
                 <span>Olá, eu sou </span>
-                <h2>Ramon Diego</h2>
+                <h1>Ramon Diego</h1>
                 <h3>Full-Stack Junior</h3>
 
                 <div class="background-image"></div>
             </div> 
         </div>
         <div class="herosection__mouse">
-            <img src="./images/mouse-solid.svg" alt="mouse">
+            <img  id="sobre_mim" src="./images/mouse-solid.svg" alt="mouse">
         </div>
     </section>
     <section class="aboutme">
        <div class="aboutme__dimension">
 
            <div>
-                <img src="./images/undraw_working_from_anywhere_ub67.svg" alt="">
+                <img src="./images/undraw_react_y7wq.svg" alt="">
            </div>
            <div>
                 <h3>Sobre Mim</h3>
@@ -77,7 +76,7 @@
        </div> 
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projetos">
         <h2>Project</h2>
         <div class="projects__dimension">
             <div class="projects__dimension-container">
@@ -126,7 +125,7 @@
         </div>
     </section>
 
-    <section class="habilidades">
+    <section class="habilidades" id="skills">
         <div class="habilidades__dimension">
 
             <div class="habilidades__dimension-container ">

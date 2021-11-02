@@ -77,7 +77,16 @@ window.onload=function(){
         let Butoon = document.querySelector("#switch")
 
         Butoon.appendChild(iconTheme)
+
+        // Trocar imagem 
+
+        
     })
     
-  }
+}
+function trocarImagem() {
+
+    let logo = document.querySelector("#logo")
+    logo.setAttribute('src', './images/minhaLogo-removebg-preview.png');         
+}
 

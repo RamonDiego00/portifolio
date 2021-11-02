@@ -69,8 +69,18 @@ M -> .menu__title-blue
           justify-content: space-between;
 }
 
+.menu__nav a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
 .menu__nav i {
   z-index: 2;
+}
+
+.menu__nav img {
+  width: 125px;
+  height: 70px;
 }
 
 .menu__nav button {
@@ -108,7 +118,7 @@ M -> .menu__title-blue
 }
 
 .herosection__dimension {
-  background: url("./images/undraw_react_y7wq.svg");
+  background: url("./images/undraw_dev_productivity_umsq.svg");
   background-size: 45%;
   background-position: right 80px;
   background-repeat: no-repeat;
@@ -126,7 +136,7 @@ M -> .menu__title-blue
           align-items: center;
 }
 
-.herosection__dimension h2 {
+.herosection__dimension h1 {
   font-size: 32px;
   font-family: 'Roboto', sans-serif;
   line-height: 40px;

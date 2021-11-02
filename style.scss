@@ -51,7 +51,7 @@ M -> .menu__title-blue
     padding: 0 20px;
     height: 80px;
     position: fixed;
-
+    
     &__nav {
       width: 100%;
       display: flex;
@@ -59,8 +59,19 @@ M -> .menu__title-blue
       align-items: center;
       justify-content: space-between;
 
+      a {
+         text-decoration: none;
+         color: var(--color-text);
+      }
+      
+
       i {
         z-index: 2;
+      }
+
+      img {
+        width: 125px;
+        height: 70px;
       }
 
       button {
@@ -83,7 +94,7 @@ M -> .menu__title-blue
 
     &__dimension{
 
-      background: url('./images/undraw_react_y7wq.svg');
+      background: url('./images/undraw_dev_productivity_umsq.svg');
       background-size: 45%;
       background-position: right 80px;
       background-repeat: no-repeat;
@@ -96,9 +107,10 @@ M -> .menu__title-blue
       padding: 0 10%;
       align-items: center;
 
-      h2 {
+      h1 {
         @include font-size-h2;
       }
+
     }
     
     &__mouse {
