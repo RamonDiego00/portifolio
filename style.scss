@@ -204,10 +204,15 @@ M -> .menu__title-blue
       justify-content: center;
       align-items:center;
       flex-direction: column;
-      width: 200px;
-      height: 150px;
+      width: 300px;
+      height: 250px;
       background-color:var(--color-blocks);
       border-radius: 4px;
+      margin: 0px 30px;
+
+      h4{
+        margin-bottom: 18px;
+      }
 
       span {
         font-size: 12px;

@@ -87,6 +87,8 @@ window.onload=function(){
 function trocarImagem() {
 
     let logo = document.querySelector("#logo")
-    logo.setAttribute('src', './images/minhaLogo-removebg-preview.png');         
+    
+    logo.setAttribute('src', './images/minhaLogo-removebg-preview.png');  
+            // logo.toggleAttribute('src', './images/minhaLogo2-removebg-preview.png');
 }
 

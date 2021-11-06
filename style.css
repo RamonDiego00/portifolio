@@ -284,10 +284,15 @@ M -> .menu__title-blue
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height: 250px;
   background-color: var(--color-blocks);
   border-radius: 4px;
+  margin: 0px 30px;
+}
+
+.projects__dimension-container h4 {
+  margin-bottom: 18px;
 }
 
 .projects__dimension-container span {
