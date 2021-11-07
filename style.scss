@@ -417,6 +417,247 @@ label:active:after {
     width: 45px;
 }
 
+@media (min-width: 375px) and (max-width:732px ) { 
+      .herosection {
+        height: 60vh;
+
+
+        &__dimension{
+          
+          background-position: right 160px;
+
+          div {
+            margin-bottom: 40px;
+          }
+          
+          h1 {
+            font-size: 25px;
+          }
+        }
+
+        &__mouse {
+      
+          
+          img {
+            width: 30px;
+            height: 40px;
+            margin-bottom: 400px;
+          }
+    
+         }
+      }
+
+      .aboutme{
+        width: 100%;
+        height: 42vh;
+        background-color: var(--bg2);
+        
+        &__dimension {
+          padding: 40px 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          color: var(--color-text);
+          gap: 24px;
+      
+          div > img {
+            width: 200px;
+            height: 200px;
+          }
+      
+          div:nth-child(2){
+            width: 500px;
+          }
+          p {
+            font-size: 8px;
+            line-height: 1.5em;
+            margin-left: 20px;
+            margin-right: 5px;
+            margin-bottom: -10px;
+
+          }
+         .button__wrapper{
+          display: flex;
+          i {
+            margin-right: 5px;
+          }
+           
+         }
+          .button-primary {
+             @include button-primary;
+             margin-right: 20px;
+             margin-bottom: 10px;
+             display: flex;
+            }
+          
+        }
+      
+      }
+
+      .projects {
+        h2{
+          @include font-size-h2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+      
+        &__dimension {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin: 0 auto;
+          max-width: 800px;
+          height: 40vh;
+      
+      
+          &-container {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            width: 220px;
+            height: 200px;
+            background-color:var(--color-blocks);
+            border-radius: 4px;
+            margin: 0px 15px;
+            max-width: 100px;
+            overflow: hidden;
+      
+            h4{
+              margin-bottom: 10px;
+              font-size: 12px;
+              margin-left: 8px;
+              padding: 5px;
+            }
+      
+            span {
+              font-size: 12px;
+              padding: 10px;
+              font-weight: bold
+            }
+      
+            .button__wrapper {
+              i {
+                font-size: 10px;
+              }
+            }
+            
+          }
+          
+          button{
+            @include button-secondary;
+            width: 30px;
+            height: 30px ;
+
+            p{
+              display: none;
+            }
+          }
+        }
+      }
+
+      .habilidades {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 60vh;
+        padding-top:70px;
+        background-color:var(--bg2);
+        color:var(--color-text);
+      
+        &__dimension {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 10%;
+          max-width: 800px;
+          
+          &-container {
+            
+            width: 100%;
+            margin-left: -250px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+      
+            h3 {
+                @include font-size-h3;
+                max-width: 250px;
+                margin-left: 200px;    
+            }
+            p{
+              line-height: 1.5em;
+              font-size: 12px;
+              max-width: 250px;
+              margin-left: 200px;
+              margin-bottom: 20px;
+            }
+          }
+          &-icons{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            cursor: pointer;
+      
+      
+            div{
+              background-color:var(--bg1);
+              display: flex;
+              justify-content: center;
+              align-items:center;
+              flex-direction: column;
+              width: 65px;
+              height: 65px;
+              margin: 5px;
+              border-radius: 10px;
+              
+              i {
+                font-size: 35px;
+                color:#8257E5; 
+                
+                
+              }
+      
+              
+      
+            }
+          }
+        }
+      }
+
+      .footer {
+        width: 100%;
+        height: 10vh;
+        background: linear-gradient(70deg, (#2222FF), (#8257E5));;
+      
+      
+        &__dimension {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i{
+            margin: 0 40px;
+            font-size: 22px;
+            color: $color-white;
+          }
+          a {
+            margin-top: 30px;
+          }
+        }
+      
+      
+      }
+
+
+ }
+
 
 
    
