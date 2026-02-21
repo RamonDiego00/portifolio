@@ -1,4 +1,4 @@
-# Deploy do portfólio no GitHub Pages
+# Deploy do portfólio na Vercel
 
 Repositório: [github.com/RamonDiego00/portifolio](https://github.com/RamonDiego00/portifolio)
 
@@ -9,19 +9,27 @@ No terminal, na pasta do projeto:
 ```bash
 git remote set-url origin https://github.com/RamonDiego00/portifolio.git
 git add .
-git commit -m "Portfolio React + Vite com deploy para GitHub Pages"
+git commit -m "Portfolio React + Vite com deploy para Vercel"
 git push -u origin main
 ```
 
 Se a branch local for `master`, use: `git push -u origin master`
 
-## GitHub Pages
+## Vercel
 
-1. No repositório: **Settings** → **Pages**.
-2. Em **Build and deployment**, **Source:** **GitHub Actions**.
+1. Acesse [vercel.com](https://vercel.com) e faça login com sua conta GitHub.
+2. Clique em **Add New… → Project**.
+3. Importe o repositório **RamonDiego00/portifolio**.
+4. As configurações são detectadas automaticamente (Vite):
+   - **Framework Preset:** Vite
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+5. Clique em **Deploy**.
 
-Depois do push, o workflow faz o deploy. O site fica em:
+A cada `push` na branch `main` (ou `master`), a Vercel fará o redeploy automático.
 
-**https://ramondiego00.github.io/portifolio/**
+O site ficará disponível em uma URL no formato:
 
-(URLs do GitHub Pages são em minúsculas.)
+**https://portifolio-ramondiego00.vercel.app**
+
+(A URL exata é gerada pela Vercel no momento do primeiro deploy.)
